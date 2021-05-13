@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+</head>
+<body>
+<form id="maytinh">
+    <table style="border: 5px solid red; border-collapse: collapse;">
+        <tr>
+            <td colspan="4" style="height: 50px;"><input style="width: 200px; height: 50px; text-align: right" type="text" id="doctext"></td>
+        </tr>
+        <tr>
+            <td><input style="width: 50px; height: 50px" type="button" value="1" onclick="number(1)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="2" onclick="number(2)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="3" onclick="number(3)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="+" onclick="number('+')"></td>
+        </tr>
+        <tr>
+            <td><input style="width: 50px; height: 50px" type="button" value="4" onclick="number(4)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="5" onclick="number(5)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="6" onclick="number(6)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="-" onclick="number('-')"></td>
+        </tr>
+        <tr>
+            <td><input style="width: 50px; height: 50px" type="button" value="7" onclick="number(7)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="8" onclick="number(8)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="9" onclick="number(9)"></td>
+            <td><input style="width: 50px; height: 50px" type="button" value="x" onclick="number('*')"></td>
+        </tr>
+        <tr>
+        <td><input style="width: 50px; height: 50px" type="reset" value="C"></td>
+        <td><input style="width: 50px; height: 50px" type="button" value="0" onclick="number(0)"></td>
+        <td><input style="width: 50px; height: 50px" type="button" value="=" onclick="calculator('=')"></td>
+        <td><input style="width: 50px; height: 50px" type="button" value=":" onclick="number('/')"></td>
+        </tr>
+    </table>
+</form>
+</body>
+<script>
+    function number(value) {
+        document.getElementById("doctext").value += value;
+    }
+    function calculator() {
+        total = eval(document.getElementById("doctext").value);
+        document.getElementById("doctext").value = total;
+    }
+</script>
+</html>

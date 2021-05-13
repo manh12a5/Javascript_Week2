@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 10</title>
+</head>
+<body>
+<p id="p1"></p>
+<script>
+    let kWh;
+    kWh = parseFloat(prompt("Nhập sản lượng điện gia đình: "));
+    if (kWh > 401){
+        VND = 2927 * kWh;
+        document.getElementById("p1").innerText = "Số tiền phải thanh toán là " + VND;
+    } else if (kWh > 301){
+        VND = 2834 * kWh;
+        document.getElementById("p1").innerText = "Số tiền phải thanh toán là " + VND;
+    } else if (kWh > 201){
+        VND = 2536 * kWh;
+        document.getElementById("p1").innerText = "Số tiền phải thanh toán là " + VND;
+    } else if (kWh > 101){
+        VND = 2014 * kWh;
+        document.getElementById("p1").innerText = "Số tiền phải thanh toán là " + VND;
+    } else if (kWh > 51){
+        VND = 1734 * kWh;
+        document.getElementById("p1").innerText = "Số tiền phải thanh toán là" + VND;
+    } else if (kWh > 1678){
+        VND = 1678 * kWh;
+        document.getElementById("p1").innerText = "Số tiền phải thanh toán là" + VND;
+    } else {
+        alert(" Nhập lại lượng điện");
+
+    }
+
+</script>
+
+</body>
+</html>

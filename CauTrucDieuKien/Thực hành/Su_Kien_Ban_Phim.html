@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+<img  id="image" src="https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Article+Image+Update/Running/How+Far/Article.jpg"
+     alt="Hinh Anh" style=" position: absolute; left: 0; right: 10px;top: 0; bottom: 0; width: 300px; height: 250px" >
+</body>
+<script>
+    function nutlen(){
+        image.style.top = parseInt(document.getElementById("image").style.top) -10 +'px';
+    }
+    function nutxuong(){
+        image.style.top = parseInt(document.getElementById("image").style.top) +10 +'px';
+    }
+    function nuttrai() {
+        image.style.left = parseInt(document.getElementById("image").style.left) -10 + 'px';
+    }
+    function nutphai() {
+        image.style.left = parseInt(document.getElementById("image").style.left) +10 + 'px';
+    }
+    function option(move){
+        switch (move.keyCode){
+            case 37:
+                nuttrai();
+                break;
+            case 39:
+                nutphai();
+                break;
+            case 38:
+                nutlen();
+                break;
+            case 40:
+                nutxuong();
+                break;
+        }
+    }
+    function docReady(){
+        window.addEventListener('keydown', option);
+    }
+</script>
+</html>

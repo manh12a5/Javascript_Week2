@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<button id="b1" onclick="doC()"> Nhập Độ C</button>
+<button id="b2" onclick="doF()"> Nhập Độ F</button>
+<script>
+    let C,F;
+    function doC(){
+        a = document.getElementById("b1").value;
+        a= parseFloat(prompt("Nhập Độ C: "));
+        F= a * (9/5) + 32;
+        alert(" Chuyển sang độ F: "+ F);
+    }
+    function doF(){
+        b= document.getElementById("b2").value;
+        b= parseFloat(prompt("Nhập Độ F: "));
+        C= 5/9 * (b- 32);
+        alert(" Chuyển sang độ C: "+ C);
+    }
+    // let C, F;
+    // C= parseFloat(prompt("Nhập độ C: "));
+    // F= C* (9/5) +32;
+    // alert("Chuyển sang độ F: "+ F);
+</script>
+</body>
+</html>

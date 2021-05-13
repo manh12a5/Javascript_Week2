@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<button id="b1" onclick="c1()"> Chuyển từ M sang Ft</button>
+<button id="b2" onclick="c2()"> Chuyển từ Ft sang M</button>
+<script>
+    let m, ft;
+    function c1(){
+        a= document.getElementById("b1").value;
+        a= parseFloat(prompt("Nhập số mét: "));
+        ft =a * 3.2808;
+        alert("Số Feet cần đổi là: "+ ft);
+    }
+    function c2(){
+        b= document.getElementById("b2").value;
+        b= parseFloat(prompt("Nhập số Feet: "));
+        M= b/3.2808;
+        alert("Số Mét cần đổi là: "+ M);
+    }
+</script>
+</body>
+</html>

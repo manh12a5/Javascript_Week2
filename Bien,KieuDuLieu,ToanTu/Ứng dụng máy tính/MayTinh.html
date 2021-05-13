@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May Tinh</title>
+</head>
+<body>
+<fieldset style="width: 15%; background-color: ghostwhite">
+    <legend><h1 style="color: blue">May Tinh</h1></legend>
+    <table>
+        <form>
+            <tr>
+                <td colspan="2"><input style="width: 100px" type="text" id="blank1"></td>
+                <td colspan="2"><input style="width: 100px" type="text" id="blank2"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="cong()" value="+"
+                           style="width: 50px; height: 50px; background-color: yellow; font-size: large"></td>
+                <td><input type="button" onclick="tru()" value="-"
+                           style="width: 50px; height: 50px; background-color: yellow; font-size: large"></td>
+                <td><input type="button" onclick="nhan()" value="x"
+                           style="width: 50px; height: 50px; background-color: yellow; font-size: large"></td>
+                <td><input type="button" onclick="chia()" value=":"
+                           style="width: 50px; height: 50px; background-color: yellow; font-size: large"></td>
+            </tr>
+            <tr>
+                <td><p style="text-align: center"><b>Tong:</b></p></td>
+                <td colspan="2"><input style="width: 100px" type="text" id="total"></td>
+                <td><input type="reset" value="C" style="width: 50px" onclick="reset()"></td>
+            </tr>
+        </form>
+    </table>
+</fieldset>
+</body>
+<script>
+    function cong(){
+        blank1= parseFloat(document.getElementById("blank1").value);
+        blank2= parseFloat(document.getElementById("blank2").value);
+        document.getElementById("total").value = blank1 + blank2;
+    }
+    function tru(){
+        blank1= parseFloat(document.getElementById("blank1").value);
+        blank2= parseFloat(document.getElementById("blank2").value);
+        document.getElementById("total").value = blank1 - blank2;
+    }
+    function nhan(){
+        blank1= parseFloat(document.getElementById("blank1").value);
+        blank2= parseFloat(document.getElementById("blank2").value);
+        document.getElementById("total").value = blank1 * blank2;
+    }
+    function chia(){
+        blank1= parseFloat(document.getElementById("blank1").value);
+        blank2= parseFloat(document.getElementById("blank2").value);
+        document.getElementById("total").value = blank1 / blank2;
+    }
+</script>
+</html>

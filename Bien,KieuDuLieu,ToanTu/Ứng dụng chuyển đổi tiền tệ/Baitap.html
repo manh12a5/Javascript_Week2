@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<fieldset style="width: 20%">
+    <legend style="text-align: center"><h2>Chuyển đổi tiền tệ</h2></legend>
+    <form>
+        <p><b> Amount</b></p>
+        <label><input type="text" id="money"></label>
+        <br>
+        <p><b>From Currency</b></p>
+        <label>
+            <select id="FromCurrency">
+                <option value="1"> USD</option>
+                <option value="23000"> VND</option>
+            </select>
+        </label>
+        <br>
+        <p><b> To Currency</b></p>
+        <label>
+            <select id="ToCurrency">
+                <option value="23000"> VND</option>
+                <option value="1"> USD</option>
+            </select>
+        </label>
+        <br><br>
+        <label><input type="button" value="Convent" onclick="convent()"></label>
+    </form>
+</fieldset>
+</body>
+<script>
+    function convent() {
+        let ToCurrency, FormCurrency, money;
+        money = document.getElementById("money").value;
+        ToCurrency = document.getElementById("ToCurrency").value;
+        FormCurrency = document.getElementById("FromCurrency").value;
+        total = money * ToCurrency / FormCurrency;
+        alert("Số tiền là: " + total);
+    }
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính</title>
+</head>
+<body>
+<fieldset style="width: 25%; background-color: ghostwhite">
+    <from>
+        <legend><h1 style="color: red">Máy tính</h1></legend>
+        <label><input id="blank1" type="text"></label> &ensp; &ensp;
+        <label><input id="blank2" type="text"></label>
+        <br><br>
+        <input type="button" value="Cộng (+) " onclick="cong()"> &ensp; &ensp;
+        <input type="button" value="Trừ (-) " onclick="tru()"> &ensp; &ensp;
+        <input type="button" value="Nhân (*) " onclick="nhan()"> &ensp; &ensp;
+        <input type="button" value="Chia (/) " onclick="chia()"> &ensp; &ensp;
+        <br>
+        <p><b>Tổng: </b></p>
+        <input type="text" id="total">
+    </from>
+</fieldset>
+</body>
+<script>
+    function cong()
+    {
+        let blank1, blank2 ;
+        blank1 = parseInt(document.getElementById("blank1").value);
+        blank2 = parseInt(document.getElementById("blank2").value);
+        document.getElementById("total").value = blank1 + blank2;
+    }
+    function tru()
+    {
+        let blank1, blank2;
+        blank1 = parseInt(document.getElementById("blank1").value);
+        blank2 = parseInt(document.getElementById("blank2").value);
+        document.getElementById('total').value = blank1 - blank2;
+    }
+    function nhan()
+    {
+        let blank1, blank2;
+        blank1 = parseInt(document.getElementById("blank1").value);
+        blank2 = parseInt(document.getElementById("blank2").value);
+        document.getElementById('total').value = blank1 * blank2;
+    }
+    function chia()
+    {
+        let blank1, blank2;
+        blank1 = parseInt(document.getElementById("blank1").value);
+        blank2 = parseInt(document.getElementById("blank2").value);
+        document.getElementById('total').value = blank1 / blank2;
+    }
+</script>
+</html>

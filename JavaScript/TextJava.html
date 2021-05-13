@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function openPage(a)
+        {
+            window.open(a);
+        }
+        function display()
+        {
+            let tmp;
+            tmp = prompt("Nhập cần hiện");
+            document.getElementById('result').innerHTML =tmp;
+        }
+    </script>
+</head>
+<body onload="alert('Welcome')">
+<div id="result" style="width: 200px; border: 1px black solid">
+</div><br>
+<button onclick="display()">Đổi kết quả</button>
+<a href="https://tinhte.vn/" target="_blank" onclick="return(confirm('Bạn có muốn mở trang này không'))">Mở trang web</a>
+<br><br>
+<button onclick="if (confirm('Bạn có thực sự muốn mở ?')) return openPage(prompt('Nhập địa chỉ trang web cần mở '))">Mở trang web</button>
+</body>
+</html>

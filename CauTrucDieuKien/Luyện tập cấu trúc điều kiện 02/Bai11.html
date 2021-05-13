@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 11</title>
+</head>
+<body>
+<script>
+    let money;
+    money = parseInt(prompt("Nhập số tiền lương tháng: "));
+    if ( money >= 80000000){
+        VND = 18150000 * 0.35;
+        alert("Số tiền thuế thu nhập cá nhân là: " + VND + " VND");
+    } else if ( money >= 52000000){
+        VND = 9750000 * 0.3;
+        alert(" Số tiền thuế thu nhập cá nhân là: " + VND + " VND");
+    } else if ( money >= 32000000){
+        VND = 4750000 * 0.25;
+        alert(" Số tiền thuế thu nhập cá nhân là: " + VND + " VND");
+    } else if ( money >= 18000000){
+        VND = 1950000 * 0.2;
+        alert(" Số tiền thuế thu nhập cá nhân là: " + VND + " VND");
+    } else if ( money >= 10000000){
+        VND = 750000 * 0.15;
+        alert(" Số tiền thuế thu nhập cá nhân là: " + VND + " VND");
+    } else {
+        alert(" Bạn không có thuế thu nhập cá nhân");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đèn</title>
+</head>
+<body>
+<H1> Bật/Tắt đèn</H1>
+<button type="button" onclick="batden()"> Bật đèn</button>
+<img id="den" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+<button type="button" onclick="tatden()"> Tắt đèn</button>
+</body>
+<script>
+    function batden(){
+        document.getElementById("den").src ='https://www.w3schools.com/js/pic_bulbon.gif';
+    }
+    function tatden(){
+        document.getElementById("den").src='https://www.w3schools.com/js/pic_bulboff.gif';
+    }
+</script>
+</html>

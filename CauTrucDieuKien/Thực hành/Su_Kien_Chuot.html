@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bong Da</title>
+</head>
+<body>
+<form>
+    <img id="image" src="https://cf.shopee.vn/file/336295657902e8becdeb174f977e0e8b" style="width: 200px; height: 200px" alt="Qua Bong"><br>
+    <input type="button" style="width: 200px" value="Click Me" onclick="moveright()">
+</form>
+</body>
+<script>
+    let bong;
+    bong= document.getElementById('image');
+    function init(){
+        bong.style.position = 'relative';
+        bong.style.left = '0px';
+    }
+    function moveright(){
+        bong.style.left = parseInt(bong.style.left) +10 +'px';
+    }
+    window.onload= init;
+</script>
+</html>
